@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Exercise #4b: Advanced lists -->
+        <title>Exercise #4b</title>
+        <style>
+            ol.latin-items {
+                list-style-type: upper-latin;
+            }
+            ol.lc-roman-items {
+                list-style-type: lower-roman;
+            }
+            ul.square-items {
+                list-style-type: square;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="square-items">
+            <li>Apples</li>
+            <li>Oranges</li>
+            <ol class="lc-roman-items">
+                <li>Orange A</li>
+                <li>Orange B</li>
+                <li>Orange C</li>
+                <ol class="latin-items" reversed start="26">
+                    <li>red</li>
+                    <li>green</li>
+                    <li>blue</li>
+                </ol>
+            </ol>
+            <li>Bananas</li>
+        </ul>
+    </body>
+</html>

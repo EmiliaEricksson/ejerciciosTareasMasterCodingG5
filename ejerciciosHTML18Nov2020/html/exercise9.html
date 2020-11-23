@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Exercise #9: Images -->
+        <title>Exercise #9</title>
+        <style>
+            #octocat-two {
+                height: 25%;
+                width: 25%;
+            }
+            a{
+                text-decoration: none; /* To remove the underline from links (in this case, from images) */
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://github.com/">
+            <img src="../assets/octocat.png" alt="This is a GitHub logo">
+        </a>
+        <a href="../assets/octocat.png" target="_blank">
+            <img id="octocat-two" src="../assets/octocat.png" alt="This is a GitHub logo">
+            <img src="../assets/octocat.png" alt="This is a GitHub logo" style="height: 50px;">
+        </a>
+    </body>
+</html>
