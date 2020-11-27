@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Exercise #3: Styling source code -->
+        <title>Exercise #3: Styling source code</title>
+        <style>
+            @font-face {
+                font-family: Consolas;
+                src: url("./assets/fonts/consolas/CONSOLAB.TTF")
+            }
+            @font-face {
+                font-family: Menlo;
+                src: url("./assets/fonts/Menlo-Regular.ttf")
+            }
+            @font-face {
+                font-family: Monaco;
+                src: url("./assets/fonts/Monaco.ttf")
+            }
+            pre {
+                font-family: Consolas, Menlo, Monaco, Courier New, monospace;
+            }
+            pre a {
+                color: #0033cc;
+                text-decoration: none;
+            }
+            pre a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Code snippet 1:</p>
+        <pre>
+        h1 {
+            <a href="https://www.w3schools.com/cssref/pr_font_font-family.asp">font-family</a>: <span style="color:#009933">Verdana</span>;
+            <a href="https://www.w3schools.com/cssref/pr_font_font-size.asp">font-size</a>: <span style="color:#009933">1.2em</span>;
+        }
+        </pre>
+
+        <p>Code snippet 2:</p>
+        <pre>
+        p {
+            <a href="https://www.w3schools.com/cssref/pr_font_font-family.asp">font-family</a>: <span style="color:#009933">Arial</span>;
+            <a href="https://www.w3schools.com/html/html_colors.asp">color</a>: <span style="color:#009933">blue</span>;
+            <a href="https://www.w3schools.com/cssref/pr_text_text-align.ASP">text-align</a>: <span style="color:#009933">right</span>;
+        }
+        </pre>
+    </body>
+</html>
