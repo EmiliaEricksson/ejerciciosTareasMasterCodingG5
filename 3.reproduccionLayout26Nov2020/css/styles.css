@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Nunito;
+    src: url("../assets/fonts/Nunito/Nunito-Regular.ttf")
+}
+
+html body {
+    margin: 0;
+    font-family: Nunito;
+}
+
+header img {
+    padding: 10px 0px 15px 250px;
+}
+
+.header-navbar-content {
+    background-color: #CB4C8B;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    list-style-type: none;
+    padding: 14px 250px;
+    overflow: hidden;
+}
+
+.header-navbar-content li a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header li a:hover {
+    background-color: #5FB6E0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0%;
+}
+
+.content-articles {
+    margin-bottom: 20px;
+}
+
+.content-articles article {
+    width: 800px;
+    padding: 0px 0px 40px 200px;
+}
+
+.content-articles article p {
+    text-align: justify;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.content-articles article h2 {
+    color: #5FB6E0;
+}
+
+.content-articles article img {
+    width: 350px;
+    height: 220px;
+    float: left;
+    margin-right: 40px;
+}
+
+.article-button {
+    color: white;
+    text-decoration: none;
+    background-color: #5FB6E0;
+    padding: 10px 60px;
+    transition-duration: 0.3s;
+}
+
+.article-button:hover {
+    background-color: #4189ad;
+}
+
+aside h2 {
+    color: #5FB6E0;
+}
+
+.aside-navbar-content {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: justify;
+}
+
+.aside-navbar-content li {
+    padding: 15px 200px 20px 0px;
+}
+
+.aside-navbar-content li a {
+    text-decoration: none;
+    color: #5FB6E0;
+    padding: 15px 300px 20px 12px;
+}
+
+.aside-navbar-content li a:hover {
+    background-color: #5FB6E0;
+    color: white;
+}
+
+
+.footer-links {
+    background-color: #CB4C8B;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px 40px 0px;
+}
+
+.footer-about-us {
+    width: 15%;
+}
+
+.footer-about-us h2 {
+    margin: 0px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;   
+}
+
+.footer-menu h2 {
+    margin: 0px;
+}
+
+.footer-navbar-content {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.footer-navbar-content li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0px 5px 30px;
+}
+
+.footer-copyright h6 {
+    background-color: #A43C72;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+}
