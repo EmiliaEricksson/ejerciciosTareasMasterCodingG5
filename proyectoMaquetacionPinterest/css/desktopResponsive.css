@@ -1,0 +1,246 @@
+
+@media only screen and (min-width: 992px) {
+
+    header {
+        z-index: 1;  /* Esto es para superponer elementos si llegasen a quedar solapados, siempre el que tenga el mayor numero en z-index quedará arriba */
+    }
+
+    .logo-button {
+        cursor: pointer;
+        display: block;  /* Se debe sobreescribir por haberlo quitado en el responsive de mobile */
+    }
+    
+    .logo-button i:hover {
+        background-color: #EFEFEF;
+        border-radius: 50px;
+        display: block;
+        padding: 15px 15px;
+    } 
+
+    .pinterest-icon {
+        color: #E34624;
+        font-size: 25px;
+        margin-left: 10px;
+        padding: 15px 15px;
+    }
+    
+    .header-interact-buttons {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 55px;
+        list-style-type: none;
+        margin: 0%;
+        margin-left: 10px;
+        padding: 0%;
+    }
+    
+    .header-interact-buttons li a {
+        color: black;
+        font-weight: bolder;
+        font-size: 18px;
+        padding: 15px 16px;   /* El padding debe ir no solo en el hover sino en el elemento normal también */
+        text-decoration-line: none;
+    }
+    
+    .header-interact-buttons li a:hover {
+        background-color: #EFEFEF;
+        border-radius: 30px;
+        color: black;
+        padding: 15px 16px;
+    } 
+    
+    .header-interact-buttons li a:focus {
+        background-color: black;
+        border-radius: 30px;
+        color: white;
+        padding: 15px 16px;
+    } 
+    
+    .input-search {
+        color: #E1E1E1;
+        margin-left: 10px;
+        width: 75%;
+    }
+    
+    .more-button-section {
+        display: none;
+    }
+    
+    .header-notification-buttons {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-notification-buttons i {
+        color: #767676;
+        cursor: pointer;
+        font-size: 24px;
+        padding: 5px 16px;
+    }
+    
+    .header-notification-buttons i:hover {
+        background-color: #EFEFEF;
+        border-radius: 50px;
+        padding: 15px 16px;
+    }
+     
+    .header-notification-buttons .angle-icon {
+        padding: 2px 7px;
+    }
+    
+    .header-notification-buttons .angle-icon:hover {
+        background-color: #EFEFEF;
+        border-radius: 50px;
+        padding: 2px 7px;
+    }
+    
+    .header-notification-buttons img {
+        padding: 15px 16px;
+    }
+    
+    .header-notification-buttons img:hover {
+        background-color: #EFEFEF;
+        border-radius: 50px;
+        cursor: pointer;
+        padding: 15px 16px;
+    }
+    
+    .header-notification-buttons i:focus {
+        color: black;
+        outline: none;  /* Para quitar la linea cuando se selecciona el elemento */
+    } 
+    
+    .header-navbar-content {
+        display: none;
+    }
+    
+    main {
+        margin-left: 40px;
+    }
+
+    main .pins {
+        margin: 2px;
+        width: 14%;
+    }
+    
+    main .pins .content-pins {
+        margin: 8px;
+    }
+    
+    .content-pins {
+        position: relative;
+    }
+    
+    .container {
+        display:block;
+        height: 100%;
+        left: 0%;
+        opacity: 0;
+        position: absolute;
+        top: 0%;
+    }
+
+    .buttons-board {
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    .buttons-board .board-info-top {
+        background-color: #f0f0f0c2;
+        border: none;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        cursor: pointer;
+        font-weight: bolder;
+        padding: 15px 10px;
+        white-space: nowrap;
+    }
+
+    .buttons-board .board-info-top:hover {
+        background-color: #f0f0f0;
+    }
+
+    .buttons-board .board-info-top i:hover {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    
+    .buttons-board .board-info-save {
+        background-color: #e34724de;
+        border: none;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-weight: bolder;
+        padding: 10px 24px;
+    }
+
+    .buttons-board .board-info-save:hover {
+        background-color: #e34724;
+    }
+
+    .buttons-board-bottom {
+        bottom: 65px;
+        position: absolute;
+        right: 0px;
+    }
+
+    .buttons-board-bottom .board-info-bottom i {
+        background-color: #f0f0f0be;
+        border-radius: 50%;
+        box-shadow: 0.5px 0.5px 0.5px 0.5px #88888849;
+        cursor: pointer;
+        padding: 7px;
+    }
+    
+    .buttons-board-bottom .board-info-bottom i:hover {
+        background-color: #F0F0F0;
+        border-radius: 50%;
+        padding: 7px;
+    }
+
+    .container:hover {
+        cursor: zoom-in;
+        display: block;
+        opacity: 1;
+    }
+ 
+    footer .navbar-footer-inside-content, .container-footer-icons {
+        display: none;
+    }
+
+    .navbar-footer-question {
+        align-items: center;
+        bottom: 0;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        left: 90%;
+        margin-bottom: 30px;
+        position: fixed;
+        transform: translateX(-39%);  /*Esto es para centrar elementos con position absolut o fixed, se necesita primero establecer el left (o bottom) y luego a esa posición se le resta (o se le suma) lo que se movió*/
+        width: 70%;
+    }
+
+    .navbar-footer-question i {
+        background-color: #fbfbfb;
+        border-radius: 50%;
+        box-shadow: 0.5px 0.5px 0.5px 0.5px #88888849;
+        margin-bottom: 10px;
+        padding: 14px;
+    }
+
+    .navbar-footer-question i:hover {
+        background-color: #e9e9e9;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        padding: 14px;
+    }
+}

@@ -1,0 +1,156 @@
+
+html, body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.search-header {
+    display: flex;
+    margin: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 0px;
+}
+
+.logo-button, 
+.header-interact-buttons, 
+.header-notification-buttons {
+    display: none;
+}
+
+.input-search {
+    width: 100%;
+}
+
+.input-search i {
+    color: #7C7C7C;
+    font-size: 15px;
+    padding: 18px 15px;
+    position: absolute;
+}
+
+.input-search input:hover {
+    background-color: #E1E1E1;
+    outline: none;
+} 
+
+.input-field { 
+    background-color: #F0F0F0;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 15px 34px; 
+    text-align: left; 
+    width: 100%; 
+}
+
+.plus-icon {
+    color: #7C7C7C;
+    font-size: 30px;
+    padding: 10px 10px;
+}
+
+header {
+    background-color: white;
+    padding: 5px 0px 5px 0px;
+    position: sticky;
+    top: 0px;
+}
+
+.header-navbar-content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-top: 0px;
+    overflow-x: auto;
+    padding: 15px 15px 5px 15px;
+}
+
+.header-navbar-content li {
+    margin-right: 25px;
+}
+
+.header-navbar-content li a {
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+    text-decoration-line: none;
+    white-space: nowrap;  /*Para que dos palabras me queden en la misma linea*/
+}
+
+.header-navbar-content li a:hover {
+    background-color: black;
+    border-radius: 45px;
+    color: white;
+    padding: 15px 15px 15px 15px;
+} 
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main .pins {
+    margin: 10px;
+    width: 100%;
+}
+
+main .pins .content-pins img {
+    border-radius: 15px;
+    height: auto;
+    width: 100%;  /*Es necesario usar el width, si no, el height auto no sirve*/ 
+}
+
+.container {
+    display: none;
+}
+
+main .pins .content-pins .pin-info {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    padding: 10px 5px;
+    text-transform: capitalize;
+}
+
+footer .navbar-footer-inside-content {
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    bottom: 0;
+    color: #7C7C7C;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    height: 60px;
+    justify-content: center;
+    left: 50%;
+    margin-bottom: 10px;
+    position: fixed;
+    transform: translateX(-50%);  /*Esto es para centrar elementos con position absolut o fixed, se necesita primero establecer el left (o bottom) y luego a esa posición se le resta (o se le suma) lo que se movió*/
+    width: 65%;
+}
+footer .navbar-footer-inside-content .container-footer-icons {
+    padding: 0px 15px;
+}
+
+.profile-image {
+    border-radius: 50px;
+    width: 25px;
+}
+
+.footer-icon:hover, .active {
+    color: black;
+}
+
+@media only screen and (min-width: 576px) {
+    main .pins {
+        width: 48%;
+        margin-left: 6px;
+        margin-right: 5px;
+    }
+}

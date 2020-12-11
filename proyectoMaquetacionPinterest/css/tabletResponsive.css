@@ -1,0 +1,27 @@
+@media only screen and (min-width: 768px) {
+    main .pins {
+        margin: 12.5px;
+        width: 30%;
+    }
+
+    footer .navbar-footer-inside-content {
+        align-items: center;
+        background-color: white;
+        border-radius: 30px;
+        bottom: 0;
+        color: #7C7C7C;
+        display: flex;
+        flex-direction: row;
+        font-size: 25px;
+        height: 60px;
+        justify-content: center;
+        left: 50%;
+        position: fixed;
+        transform: translateX(-50%);  /*Esto es para centrar elementos con position absolut o fixed, se necesita primero establecer el left (o bottom) y luego a esa posición se le resta (o se le suma) lo que se movió*/
+        width: 30%;
+    }
+
+    footer .navbar-footer-inside-content .container-footer-icons {
+        padding: 0px 15px;
+    }
+}
